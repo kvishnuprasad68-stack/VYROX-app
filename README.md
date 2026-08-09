@@ -1,16 +1,23 @@
-# VYROX App
+# VYROX App - Prototype
 
-Minimal Next.js app with Vercel Analytics integrated.
+This repository contains a minimal Next.js prototype app for personal use.
 
-How to run locally
+Features
+- Pages router (Next.js)
+- Mock login (client-side, localStorage)
+- Dashboard that fetches sample data from /api/data
+- Health endpoint at /api/health
+- Vercel Analytics integrated in pages/_app.js
 
-1. Install dependencies
+Run locally
+
+1. Install
 
 ```bash
 npm install
 ```
 
-2. Run the dev server
+2. Dev
 
 ```bash
 npm run dev
@@ -25,9 +32,12 @@ npm run start
 
 Health check
 
-- GET /api/health — returns { status: 'ok', uptime: <seconds> }
+GET /api/health
+
+API
+
+GET /api/data — returns sample items
 
 Notes
 
-- Analytics is integrated in `pages/_app.js` via `@vercel/analytics/react`.
-- Deployment is configured via `vercel.json`.
+This is a lightweight prototype. If you want authentication, database, or Supabase integration next, tell me and I will add it.

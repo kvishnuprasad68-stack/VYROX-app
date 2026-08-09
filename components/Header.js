@@ -8,7 +8,10 @@ export default function Header() {
           <a style={{ marginRight: 16, textDecoration: 'none', color: 'inherit' }}>Home</a>
         </Link>
         <Link href="/about">
-          <a style={{ textDecoration: 'none', color: 'inherit' }}>About</a>
+          <a style={{ marginRight: 16, textDecoration: 'none', color: 'inherit' }}>About</a>
+        </Link>
+        <Link href="/dashboard">
+          <a style={{ textDecoration: 'none', color: 'inherit' }}>Dashboard</a>
         </Link>
       </nav>
     </header>
